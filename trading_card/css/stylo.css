@@ -7,28 +7,177 @@
 */
 font{
     size:100%;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-/*THE BORDER OF THE CARD*/
+/*THE BORDER OF THE CARD, outline*/
 section{
     margin: 0em 0em;
-    padding: 2em;
+    padding: 0em;
     width: 30em;
     height: 45em;
     border-radius: 2em; 
-        
-/*background generator's CSS for section*/
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
-/* Opera */ 
-background-image: -o-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FFFFFF), color-stop(1, #000000));
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to top right, #FFFFFF 0%, #000000 100%);
+    border-width:1.25em;
+    border-style:solid;
+    border-color:#000;
+    /*background generator's CSS for section*/
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FFFFFF), color-stop(1, #000000));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #000000 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to top right, #FFFFFF 0%, #000000 100%);
 }
 
+/*div for face of the card, ontop of the background*/
+#face{
+    margin:1em;
+    height:42em;
+    background:#FFFFFF;
+    border-radius: 0.5em; 
+    border-width: 0.5em;
+    border-style:ridge;
+    border-color:#FFFFFF;
+}
+
+/*div for header of the card*/
+#head{
+    margin:0.5em;
+    margin-left:0em;
+    margin-bottom:0.2em;
+    background:#DDDDDD;
+    border-radius: 4em / 9em;
+    border-width: 0.3em;
+    border-style:solid;
+    border-color:#000;
+    padding:0%;
+    height:3em;
+    width:99%;
+}
+#head h1{
+    float:left;
+    margin:0.12em;
+    font-size:2em;
+    font-weight:bold;
+}
+/*the images to the right, inline*/
+#head img{
+    margin:0.1em;
+    margin-top: 0.5em;
+    margin-bottom: auto;
+    height:65%;
+    width:auto;
+    display:inline;
+    float:right;
+    
+}
+
+/*The art div*/
+#art{
+    margin-top:0%;
+    margin-bottom:0%;
+    margin-left: auto;
+    margin-right: auto;
+    height:40%;
+    width:95%;
+    border-style:solid;
+    border-width:0.15em;
+    overflow:hidden;
+}
+#art img{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+
+/*div for type of the card*/
+#type{
+    margin:0.5em;
+    margin-top:0.2em;
+    margin-bottom:0em;
+    background:#DDDDDD;
+    border-radius: 4em / 9em;
+    border-width: 0.3em;
+    border-style:solid;
+    border-color:#000;
+    padding:0%;
+    height:2.5em;
+    width:95%;
+}
+#type h2{
+    display:inline;
+    margin:0.35em;
+    font-size:1.2em;
+    font-weight:bold;
+    width:80%;
+}
+/*the images to the right, inline*/
+#type #icon{
+    margin:0em;
+    margin-right:0.7em;
+    float:right;
+    font-size:2em;
+    font-style: italic;
+    font-family: 'Playfair Display SC', serif;
+    font-weight:900;
+    display:inline;
+    
+}
+
+/*rules text*/
+#rules{
+    margin:0.2em;
+    background:#FFFFFF;
+    border-radius: 0.1em;
+    border-width: 0.2em;
+    border-style:solid;
+    border-color:#111111;
+    height:37%;
+}
+#rules p{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:1.3em;
+    margin-left:0.75em;
+    margin-top:0.2em;
+    margin-bottom:0.2em;
+}
+#rules p.rule{}
+#rules p.flavor{
+    font-style:italic;
+    margin-top:0.4em;
+    margin-bottom:0.4em;
+}
+
+/*foot of the card*/
+#foot{
+    position:relative;
+    top:-1.5em;
+    left:-1em;
+    z-index: 1;
+    width:20%;
+    height:5%;
+    margin-top:0em;
+    margin-left: 80%;
+    margin-right:0.2em;
+    background:#DDDDDD;
+    border-radius: 4em / 9em;
+    border-width: 0.3em;
+    border-style:solid;
+    border-color:#000;
+    
+}
+#power_tough{
+    margin-top:0em;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:1.6em;
+    font-weight:900;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
